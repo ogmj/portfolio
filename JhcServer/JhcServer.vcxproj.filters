@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{5ee33fc6-1813-4229-a83b-01fa17f591b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Network">
+      <UniqueIdentifier>{2859d4c2-71d2-479b-87ab-88793984715c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Interface">
+      <UniqueIdentifier>{90b5f876-bdbb-41a5-a0d1-712829467fc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Init">
+      <UniqueIdentifier>{9829aabb-42b7-4eae-b6c9-2974fe647ab0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Container">
+      <UniqueIdentifier>{2ecd18ce-e4bf-460a-809b-51e33d696525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Thread">
+      <UniqueIdentifier>{1d9c7330-3c92-4ace-b7d7-42ed37efd90f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Object">
+      <UniqueIdentifier>{e13da520-a6aa-4d35-a8f8-8bd6a69a34af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Loop">
+      <UniqueIdentifier>{ec2a4b9e-d847-49ee-961b-a0ce7bbbac0b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="JhcServer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="JhcServerNetworkManager.h">
+      <Filter>Server\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="JhcServerInterface.h">
+      <Filter>Server\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerInitializer.h">
+      <Filter>Server\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Interface\Interface.h">
+      <Filter>Server\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternClass.h">
+      <Filter>Server\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="JHash.h">
+      <Filter>Server\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="JContainer.h">
+      <Filter>Server\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Thread\Scheduler.h">
+      <Filter>Server\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Server\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Server\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="JhcServerLoop.h">
+      <Filter>Server\Loop</Filter>
+    </ClInclude>
+    <ClInclude Include="JhcServerLazyLoop.h">
+      <Filter>Server\Loop</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JhcServer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="JhcServerNetworkManager.cpp">
+      <Filter>Server\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="JhcServerInterface.cpp">
+      <Filter>Server\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerInitializer.cpp">
+      <Filter>Server\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Interface\Interface.cpp">
+      <Filter>Server\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Thread\Scheduler.cpp">
+      <Filter>Server\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Server\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Server\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="JhcServerLoop.cpp">
+      <Filter>Server\Loop</Filter>
+    </ClCompile>
+    <ClCompile Include="JhcServerLazyLoop.cpp">
+      <Filter>Server\Loop</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JhcServer.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="JhcServer.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
