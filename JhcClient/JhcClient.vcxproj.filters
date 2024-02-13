@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{5f20ff61-e8f2-4fed-b079-c67d9c692662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Network">
+      <UniqueIdentifier>{2e9924e6-cd34-4f78-a1cb-37b0d5ed9155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Init">
+      <UniqueIdentifier>{cbff9436-1f5e-44d9-af49-4bb7b4b7fd3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Interface">
+      <UniqueIdentifier>{877c8b93-b7ee-479b-9bd9-ae396b67f769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Thread">
+      <UniqueIdentifier>{9a0b1a82-9f70-46c0-a104-d4970b9b8b42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="JhcClient.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="NetJhcServer.h">
+      <Filter>Client\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientInitializer.h">
+      <Filter>Client\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="JhcClientInterface.h">
+      <Filter>Client\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JhcClientNetworkManager.h">
+      <Filter>Client\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Interface\Interface.h">
+      <Filter>Client\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternClass.h">
+      <Filter>Client\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Thread\Scheduler.h">
+      <Filter>Client\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Thread\SchedulerObject.h">
+      <Filter>Client\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="JhcClientLoop.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JhcClient.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="NetJhcServer.cpp">
+      <Filter>Client\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientInitializer.cpp">
+      <Filter>Client\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="JhcClientInterface.cpp">
+      <Filter>Client\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="JhcClientNetworkManager.cpp">
+      <Filter>Client\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Interface\Interface.cpp">
+      <Filter>Client\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Thread\Scheduler.cpp">
+      <Filter>Client\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="JhcClientLoop.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JhcClient.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="JhcClient.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
