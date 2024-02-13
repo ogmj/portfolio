@@ -126,20 +126,20 @@ public:
 			f = 0;
 			if (m_TotalTime.count())
 			{
-				f = i.m_ProcessTime * 100 / m_TotalTime;
+				f = static_cast<float>(i.m_ProcessTime.count() * 100 / m_TotalTime.count());
 			}
 
-			fprintf(fp, " %-42s %8d  %5.1f%% %d\n", i.m_strName.c_str(),
+			fprintf(fp, " %-42s %8d  %5.1f%% %s %s\n", i.m_strName.c_str(),
 				i.m_Cnt,
 				f,
-				i.m_ProcessTime,
-				m_TotalTime);
+				std::to_string(i.m_ProcessTime.count()).c_str(),
+				std::to_string(m_TotalTime.count()).c_str());
 		}
 
 		// print tail 
 		fprintf(fp, "%s\n", pBar);
 		char szTmp[256];
-		sprintf(szTmp, "%d second %d ms", ProfileTime / 1000000, ProfileTime % 1000000);
+		sprintf(szTmp, "%s second %s ms", std::to_string(ProfileTime.count() / 1000000).c_str(), std::to_string(ProfileTime.count() % 1000000).c_str());
 		for (int i = 0; i < strlen(pBar) - strlen(szTmp); i++)
 		{
 			fprintf(fp, " ");
